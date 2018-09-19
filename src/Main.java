@@ -110,8 +110,8 @@ public class Main {
 
     public static boolean guess2D(Student student) {
         double w1 = 1; // height coeff
-        double w2 = .7; // weight coeff
-        double c = -225;
+        double w2 = 1; // weight coeff
+        double c = -248;
 
         if(w1 * student.getHeight() + w2 * student.getWeight() + c > 0 ) {
             if(student.getClass() == Male.class) return true;
@@ -134,5 +134,4 @@ public class Main {
             else return false;
         }
     }
-
 }
